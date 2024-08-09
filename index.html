@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <!-- Links -->
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- mainJS carrega depois do HTML (atributo defer para garantir que o script seja carregado apos o HTML)-->
+        <script defer src="./js/script.js"></script>
+
+        <title>Poke Da Dex</title>
+    </head>
+
+    <body>
+        <main>
+            <img alt="pokemon" class="pokemon_image">
+            
+            <!--titulo contendo 2 elementos span para exibir o numero e o nome do pokemon-->
+            <h1 class="pokemon_data">
+                <!--exibir o numero do pokemon-->
+                <span class="pokemon_number"></span>
+                <!--exibir o nome do pokemon-->
+                <span class="pokemon_name"></span>
+            </h1>
+
+            <!--titulo contendo 2 elementos span para exibir a altura e peso do pokemon-->
+            <h1 class="pokemon_infos">
+                <!--exibir a altura do pokemon-->
+                <span class="pokemon_height"></span>
+                <!--exibir o peso do pokemon-->
+                <span class="pokemon_weight"></span>
+            </h1>
+
+            <!--elemento de formulario que contem o campo de entrada para buscar um pokemon-->
+            <form class="form">
+                <!--campo de entrada de texto para a pesoquisa (search) e um placeholder (Encontrar pokemon) *obrigatorio*-->
+                <input type="search" class="input_search" placeholder="Encontrar Pokémon" required>
+                </label>
+            </form>
+            <!--imagem do pokedex que ira aparecer na pagina-->
+            <img src="./images/pokedex.png" alt="Pokédex" class="pokedex">
+        </main>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+/*importa a fonte 'oxanium' do google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Oxanium:wgh@300;400;500;600;700;800&display=swap");
+
+/*define estilo global para todos os elementos*/
+*{
+    margin: 0; /*remove a margem padrao*/
+    padding: 0; /*remove o padding padrao*/
+    box-sizing: border-box; /*inclui padding e borda no calculo do tamanho total do elemento*/
+    font-family: "Oxanium," cursive; /*define a fonte padrao como 'oxanium'*/
+}
+
+/*estilo para o corpo (body) da pagina*/
+body{
+    text-align: center; /*centraliza o texto*/
+    background-color: #08aeea; /*defina a cor de fundo*/
+    background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+    min-height: 100vh; /*define a altura minima com 100% da altura da viewport*/
+}
+/*estilo para o elemento principal da página*/
+main{
+    display: inline-block; /*exibe o elemento como um bloco inline*/
+    margin-top:2%; /*adiciona margem no topo*/
+    padding: 15px; /*adiciona padding ao redor do elemento*/
+    position: relative; /*define a posição como relativa para o posicionamento absoluto dos elementos filhos*/
+
+}
+
+/*estilo para a imagem da pokedex*/
+.pokedex{
+    width: 100%; /*define a largura como 100% do elemento pai*/
+    max-width: 800px; /*define a largura maxima*/
+}
+
+/*estilo para a imagem do pokemon*/
+.pokemon_image{
+    width: 10%; /*defina a largura como 10% do elemento pai*/
+    height: 15%; /*define a altura como 15% do elemento pai*/
+    position: absolute; /*posiciona o elemento de forma absoluta*/
+    bottom: 50%; /*posiciona o elemento 50% do final da tela*/
+    left: 27%; /*posiciona o elemento 27% da esquedra da tela*/
+    transform: translate(-63%, 20%); /*move o elemento para ajustar a posição*/
+}
+
+/*estilo para os dados do pokemon (numero e nome)*/
+.pokemon_data{
+    position: absolute; /*posiciona o elemento da forma absoluta*/
+    font-weight: 600; /*define a espessura da fonte como 600*/
+    color: #fff; /*define a cor do texto como branco*/
+    top: 54.2%; /*posiciona o elemento 54.2% do topo da tela*/
+    right: 65%; /*posiciona o elemento 68% da direita da tela*/
+    font-size: clamp(8px, 2vw, 16px) /*define o tamanho da fonta de forma responsiva*/
+}
+
+/* Estilo para as informações do Pokémon (altura e peso) */
+.pokemon_infos{
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    display: flex; /* Define o display como flexbox */
+    flex-direction: column; /* Alinha os itens em coluna */
+    font-weight: 600; /* Define a espessura da fonte como 600 */
+    color: #000; /* Define a cor do texto como preta */
+    top: 32.5%; /* Posiciona o elemento 32.5% do topo */
+    right: 15%; /* Posiciona o elemento 15% da direita */
+    font-size: clamp(10px, 2vw, 20px); /* Define o tamanho da fonte de forma responsiva */
+    align-items: center; /* Alinha os itens ao centro */
+}
+
+  /* Estilo para o nome do Pokémon */
+.pokemon__name{
+    color: #fff; /* Define a cor do texto como branca */
+    text-transform: capitalize; /* Capitaliza a primeira letra do texto */
+}
+
+  /* Estilo para o formulário de pesquisa */
+.form{
+    position: absolute; /* Posiciona o elemento de forma absoluta */
+    width: 65%; /* Define a largura como 65% do elemento pai */
+    top: 73%; /* Posiciona o elemento 73% do topo */
+    left: 42.5%; /* Posiciona o elemento 42.5% da esquerda */
+    z-index: 5; /* Define a ordem de empilhamento */
+    display: flex; /* Define o display como flexbox */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Alinha os itens ao centro */
+    justify-content: center; /* Centraliza os itens */
+}
+
+  /* Estilo para o campo de entrada de pesquisa */
+.input_search{
+    width: 50%; /* Define a largura como 50% do elemento pai */
+    padding: 4%; /* Adiciona padding ao redor do elemento */
+    outline: none; /* Remove o contorno padrão */
+    border: 2px solid #000; /* Define uma borda preta de 2px */
+    font-weight: 600; /* Define a espessura da fonte como 600 */
+    color: #000; /* Define a cor do texto como preta */
+    font-size: clamp(10px, 2vw, 20px); /* Define o tamanho da fonte de forma responsiva */
+    background: #9d9d9d; /* Define a cor de fundo */
+    border: 3px solid #000; /* Define uma borda preta de 3px */
+    box-shadow: inset -4.84629px -4.84629px 9.69259px rgba(255, 255, 255, 0.59), /* Adiciona sombras internas */
+                inset 7.26944px 7.26944px 19.3852px rgba(95, 3, 18, 0.81);
+    border-radius: 7.26944px; /* Define o raio da borda */
+}
+
